@@ -3,7 +3,7 @@ Implementation of the two-level multigrid algorithm applied to elliptic heat dif
 Jupyter notebook.
 
 # Requirements
-Numpy 1.26.0
+Numpy 1.26.0\\
 Matplotlib 3.8.4
 
 # Setting up the Problem
