@@ -7,7 +7,7 @@ Numpy 1.26.0
 Matplotlib 3.8.4
 
 # Setting up the Problem
-Under the section "running the problem", you can find the chunks which define and discretize the system, and then generate the assembly matrix A over the fine grid. Here the pipe runs from $x=0$ and $x=1.0$, with a refinement of 0.01. The coarse grid will simply have refinement 0.02. One need not know FVM or conservation equation in fluid mechanics: a general intuition of the diffusion of heat does help. All input data for the multigrid algorithm is generated here. No outside files are needed.
+Under the section "Setting up the Problem", you can find the chunks which define and discretize the system, and then generate the assembly matrix A over the fine grid. Here the pipe runs from $x=0$ and $x=1.0$, with a refinement of 0.01. The coarse grid will simply have refinement 0.02. One need not know FVM or conservation equation in fluid mechanics: a general intuition of the diffusion of heat does help. All input data for the multigrid algorithm is generated here. No outside files are needed.
 
 # Running the Algorithm
 Under the section "Multigrid Algorithm", you can find the chunks defining the multigrid algorithm. These include generating the restriction matrix, running the algorithm (this should take about 5 minutes to run), and viewing the residuals generated during execution. The algorithm returns no outputs (the exact solution will be generated, but this is not explicilty the job of the multigrid algorithm); instead correctness depends on the algorithm a) terminating and b) terminating in less iterations than the naive approach.
